@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <title>Dynamic JavaScript Components with Bootstrap</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-5">Carousel</h1>
+
+      <h3>Carousel</h3>
+
+      <div class="carousel slide" id="slider">
+        <!-- Indicators -->
+
+        <div class="carousel-indicators">
+          <button
+            class="active"
+            data-bs-slide-to="0"
+            data-bs-target="#slider"
+          ></button
+          ><button
+            data-bs-slide-to="1"
+            data-bs-target="#slider"
+          ></button
+          ><button
+            data-bs-slide-to="2"
+            data-bs-target="#slider"
+          ></button
+          ><button
+            data-bs-slide-to="3"
+            data-bs-target="#slider"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/ocean.jpg" alt="" class="d-block w-100" />
+            <div
+              class="carousel-caption mb-4 mb-4 d-none d-md-block bg-secondary opacity-75"
+            >
+              <h5>Ocean</h5>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+                consectetur
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="image/mountain.jpg" alt="" class="d-block w-100" />
+            <div
+              class="carousel-caption mb-4 d-none d-md-block bg-secondary opacity-75"
+            >
+              <h5>Mountain</h5>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+                consectetur
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="image/dessert.jpg" alt="" class="d-block w-100" />
+            <div
+              class="carousel-caption mb-4 d-none d-md-block bg-secondary opacity-75"
+            >
+              <h5>Dessert</h5>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+                consectetur
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="image/village.jpg" alt="" class="d-block w-100" />
+            <div
+              class="carousel-caption mb-4 d-none d-md-block bg-secondary opacity-75"
+            >
+              <h5>Village</h5>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+                consectetur
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Buttons -->
+
+        <button
+          class="carousel-control-prev"
+          data-bs-slide="prev"
+          data-bs-target="#slider"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previouse</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          data-bs-slide="next"
+          data-bs-target="#slider"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Don't go past here -->
+    </div>
+    <div style="margin-top: 350px"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
