@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <title>Dynamic JavaScript Components with Bootstrap</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-5">Spinners</h1>
+
+      <h3>Border Spinner</h3>
+
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+
+      <br /><br />
+
+      <h3>Colors</h3>
+
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+      <div class="spinner-border text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-info" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-dark" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+
+      <br /><br />
+
+      <h3>Growing Spinner</h3>
+
+      <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+
+      <br /><br />
+
+      <h3>Align Center</h3>
+
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden"></span>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <h3>Size</h3>
+
+      <div class="spinner-border spinner-border-sm text-primary" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+
+      <!-- sm - yazdıqda small ölçüyə sahib olan spinner alırıq. lakin lg ölçüyə sahib 
+    olan spinner üçün lg yazsaq işləməyəcək. bunun üçün inner line style kodu əlavə olunur. 
+    aşağıdakı nümunədə göstərilmişdir -->
+
+      <div
+        class="spinner-border text-primary"
+        style="height: 5rem; width: 5rem"
+        role="status"
+      >
+        <span class="visually-hidden"></span>
+      </div>
+
+      <br /><br />
+
+      <h3>In Button</h3>
+
+      <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+        Loading...
+      </button>
+
+      <br /><br />
+    </div>
+    <div style="margin-top: 350px"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
