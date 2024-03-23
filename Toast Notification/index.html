@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <title>Dynamic JavaScript Components with Bootstrap</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-5">Toast Notification</h1>
+
+      <h3>Toasts</h3>
+      <button id="toastBtn" class="btn btn-primary">Show Toast</button>
+
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast" id="myToast">
+          <div class="toast-header text-bg-danger">
+            <div class="me-auto">Bootstrap</div>
+            <small>7 mins ago</small>
+          </div>
+          <div class=" toast-body text-bg-danger"
+            >Hello World! This is a toast message!</div
+          >
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 350px"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const toastTrigger = document.querySelector("#toastBtn")
+      const toast = document.querySelector("#myToast")
+
+      if (toastTrigger) {
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toast)
+
+        toastTrigger.addEventListener("click", () => {
+          toastBootstrap.show()
+        })
+      }
+    </script>
+  </body>
+</html>
